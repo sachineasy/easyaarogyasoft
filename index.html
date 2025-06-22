@@ -3,69 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EasyAarogyaSoft - Software Solutions</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>EasyAarogyasoft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6a11cb;
+      --secondary: #2575fc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta {
+      background: #fff;
+      color: #000;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      transform: scale(1.05);
+      background: #ffd700;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 2rem 0;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>EasyAarogyaSoft</h1>
+    <div class="logo">
+      <img src="https://github.com/sachineasy/easyaarogyasoft/blob/baec81751cae3677b9c8ed0fc0e0df2d71886d72/eas_soft.jpg" alt="EasyAarogyasoft Logo" />
+      <h1>EasyAarogyasoft</h1>
+    </div>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#clients">Clients</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h2>Your Trusted Partner in Digital Health Solutions</h2>
-    <p>We develop smart, secure, and scalable software for the healthcare industry.</p>
+  <section>
+    <h2>Transform Your Health</h2>
+    <p>Cutting-edge technology solutions crafted for modern healthcare systems. Powered by innovation, designed for impact.</p>
+    <button class="cta">Get Started</button>
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>EasyAarogyaSoft is a technology-driven software company offering innovative digital healthcare solutions. We serve hospitals, clinics, and health providers across India.</p>
+    <p>EasyAarogyasoft is a forward-thinking healthtech company delivering smart, scalable, and futuristic software tailored for healthcare enterprises.</p>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Custom Healthcare Software Development</li>
-      <li>Mobile App Development</li>
-      <li>Website & Portal Development</li>
-      <li>Software Consulting</li>
-    </ul>
+    <div class="grid">
+      <div class="card">
+        <h3>Custom Health Apps</h3>
+        <p>We build bespoke digital tools to simplify patient and clinic workflows.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Integration</h3>
+        <p>Seamless deployment and management with secure cloud infrastructure.</p>
+      </div>
+      <div class="card">
+        <h3>Analytics & AI</h3>
+        <p>Leverage data insights with smart dashboards and AI predictions.</p>
+      </div>
+    </div>
   </section>
 
   <section id="products">
     <h2>Our Products</h2>
-    <p>We offer:</p>
-    <ul>
-      <li>Hospital Management System</li>
-      <li>Patient Registration & EMR</li>
-      <li>Online Appointment Booking</li>
-      <li>Insurance Integration Tools</li>
-    </ul>
-  </section>
-
-  <section id="clients">
-    <h2>Our Clients</h2>
-    <p>We proudly serve healthcare leaders like Bajaj Electricals, Infina, and other private clinics across India.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>AarogyaPro</h3>
+        <p>Flagship clinic management software to handle appointments, billing, and reports.</p>
+      </div>
+      <div class="card">
+        <h3>TeleCare</h3>
+        <p>Video consultation and virtual care platform with smart integrations.</p>
+      </div>
+      <div class="card">
+        <h3>eHealth CRM</h3>
+        <p>Manage patients, doctors, and campaigns in one centralized system.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@easyaarogyasoft.com</p>
-    <p>Phone: +91-98765-43210</p>
-    <p>Location: Malé, India</p>
+    <p>Email: contact@easyaarogyasoft.com | easyaarogyasoft@gmail.com</p>
+    <p>Phone: +91-9022482083</p>
   </section>
 
   <footer>
-    <p>© 2025 EasyAarogyaSoft. All rights reserved.</p>
+    <p>&copy; 2025 EasyAarogyasoft. Crafted with care. All rights reserved.</p>
   </footer>
 </body>
 </html>
