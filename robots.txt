@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://easyaarogyasoft.com/sitemap.xml
